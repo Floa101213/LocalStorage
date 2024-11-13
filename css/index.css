@@ -1,4 +1,53 @@
-body, input{
-font-family: Arial, Helvetica, sans-serif;
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
 
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #a52929;
+}
+
+form{
+/*margin-right: 1200px;*/
+align-items: center;
+
+}
+fieldset {
+    border-color: black;
+    border-radius: 15px;
+    flex-flow: column;
+    display: flex;
+    gap: 30px;
+    margin-top: 25vh;
+    background-color: white;
+    box-shadow: 0px 0px 10px 1px black;
+}
+
+legend {
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px 0.4px black;
+    
+}
+
+input[type="button"] {
+    transition: all 0.3s;
+}
+
+input[type="button"]:hover {
+    background-color: #a52929;
+}
+
+div.escrita {
+    flex-flow: column;
+    display: flex;
 }
