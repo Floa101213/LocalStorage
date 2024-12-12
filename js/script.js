@@ -28,14 +28,14 @@ function ConsultaDados()
 function AtualizaDados()
 {
     localStorage.setItem(chave, document.getElementById("nome").value);
-    localStorage.setItem(chave2, document.getElementById("email").value);
+    localStorage.setItem(chave1, document.getElementById("curso").value);
 }
 
 
 function LimparCampos()
 {
     document.getElementById("nome").value = "";
-    document.getElementById("email").value = "";
+    document.getElementById("curso").value = "";
 }
 
 
@@ -43,7 +43,7 @@ function insertData(){
 
     i = i + 1;
     localStorage.setItem("Nome " + i , document.getElementById("nome").value);
-    localStorage.setItem("Email " + i , document.getElementById("email").value);
+    localStorage.setItem("Curso " + i , document.getElementById("curso").value);
     LimparCampos();
 }
 
@@ -53,7 +53,7 @@ function ViewAllData()
 
     for(let indice = 1; indice <= i; indice++)
     {
-        resultado += localStorage.getItem("Nome " + indice) + " - " + localStorage.getItem("Email " + indice) + "<br>";
+        resultado += localStorage.getItem("Nome " + indice) + " - " + localStorage.getItem("Curso " + indice) + "<br>";
     }
 
 document.getElementById("resultado").innerHTML = resultado;
